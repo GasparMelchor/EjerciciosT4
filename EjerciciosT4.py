@@ -9,6 +9,7 @@ tokens = (
     "RESTA",
     "MULTIPLICACION",
     "DIVISION",
+    "RESIDUO_DIVISION",
     #ejercicio 4
     "MENOR",
     "MAYOR",
@@ -58,6 +59,7 @@ def t_NUM_ENTEROS(t):
 t_SUMA=r"\+"
 t_RESTA=r"\-"
 t_MULTIPLICACION=r"\*"
+t_RESIDUO_DIVISION=r"\%"
 t_DIVISION=r"\/"
 #operadores relacionales
 t_MENOR=r"\<"
