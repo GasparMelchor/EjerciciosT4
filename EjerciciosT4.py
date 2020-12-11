@@ -3,6 +3,7 @@ import ply.lex as lex
 tokens = (
     #ejercicio 2
     "NUM_CONTINUOS",
+    "NUM_ENTEROS",
     #ejercicio 3
     "SUMA",
     "RESTA",
@@ -50,6 +51,9 @@ def t_error(t):
 def t_NUM_CONTINUOS(t):
     r"\d+.\d+"
     return t
+def t_NUM_ENTEROS(t):
+    r"\d+"
+    return t   
 #operadores aritmeticos
 t_SUMA=r"\+"
 t_RESTA=r"\-"
